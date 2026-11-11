@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development with AI – Trivikra Tech</title>
+    <meta name="description" content="Learn to build responsive, modern websites and web applications using web technologies and AI-powered development tools at Trivikra Tech.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/images/logo-lode.png">
+</head>
+<body class="has-dark-hero">
+
+    <!-- ============================================================
+         NAVBAR (Inner Page – NOT transparent)
+         ============================================================ -->
+        <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top navbar-transparent" data-transparent="true">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Trivikra Tech" class="navbar-logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          
+          <!-- Courses Full-Width Mega Dropdown -->
+          <li class="nav-item dropdown dropdown-mega">
+            <a class="nav-link dropdown-toggle active" href="courses.html" id="coursesDropdown" role="button" aria-expanded="false">
+              Courses <i class="fa-solid fa-chevron-down ms-1 nav-arrow"></i>
+            </a>
+            <div class="mega-menu" aria-labelledby="coursesDropdown">
+              <div class="container py-4">
+                <div class="mega-menu-header mb-3 pb-2 d-none d-lg-flex justify-content-between align-items-center border-bottom">
+                  <span class="mega-menu-title"><i class="fa-solid fa-sparkles text-primary me-2"></i> Our AI-Powered Programs</span>
+                  <a href="courses.html" class="mega-view-all">View All Programs <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                </div>
+                <div class="row g-3">
+                  <!-- Option 1: All Courses -->
+                  <div class="col-lg-3 col-12">
+                    <a href="courses.html" class="mega-menu-card">
+                      <div class="mega-card-icon icon-all">
+                        <i class="fa-solid fa-layer-group"></i>
+                      </div>
+                      <div class="mega-card-content">
+                        <div class="mega-card-badge">Complete Catalog</div>
+                        <h6 class="mega-card-title">All Courses</h6>
+                        <p class="mega-card-desc">Browse our complete spectrum of industry-leading design &amp; tech courses.</p>
+                      </div>
+                    </a>
+                  </div>
+
+                  <!-- Option 2: UI/UX Design with AI -->
+                  <div class="col-lg-3 col-12">
+                    <a href="ui-ux-design.html" class="mega-menu-card">
+                      <div class="mega-card-icon icon-uiux">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                      </div>
+                      <div class="mega-card-content">
+                        <div class="mega-card-badge badge-popular">Popular</div>
+                        <h6 class="mega-card-title">UI/UX Design with AI</h6>
+                        <p class="mega-card-desc">Master Figma design systems, UX research, and agentic AI workflows.</p>
+                      </div>
+                    </a>
+                  </div>
+
+                  <!-- Option 3: Graphic Design with AI -->
+                  <div class="col-lg-3 col-12">
+                    <a href="graphic-design.html" class="mega-menu-card">
+                      <div class="mega-card-icon icon-graphic">
+                        <i class="fa-solid fa-palette"></i>
+                      </div>
+                      <div class="mega-card-content">
+                        <div class="mega-card-badge badge-creative">Creative</div>
+                        <h6 class="mega-card-title">Graphic Design with AI</h6>
+                        <p class="mega-card-desc">Brand systems, visual storytelling, commercial advertising &amp; Gen-AI.</p>
+                      </div>
+                    </a>
+                  </div>
+
+                  <!-- Option 4: Web Development with AI -->
+                  <div class="col-lg-3 col-12">
+                    <a href="web-development.html" class="mega-menu-card">
+                      <div class="mega-card-icon icon-webdev">
+                        <i class="fa-solid fa-code"></i>
+                      </div>
+                      <div class="mega-card-content">
+                        <div class="mega-card-badge badge-demand">High Demand</div>
+                        <h6 class="mega-card-title">Web Development with AI</h6>
+                        <p class="mega-card-desc">Responsive websites, modern frontend/fullstack, and AI coding assistants.</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+        <a href="courses.html" class="btn btn-cta">Explore Courses</a>
+      </div>
+    </div>
+  </nav>
+
+    <!-- ============================================================
+         COURSE DETAIL HEADER (FULL SCREEN BG)
+         ============================================================ -->
+    <section class="course-detail-header course-hero-bg course-hero-webdev">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="courses.html">Courses</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Web Development</li>
+                </ol>
+            </nav>
+            <h1>Web Development with AI</h1>
+            <p>Learn to build responsive, modern websites and web applications using web technologies and AI-powered development tools.</p>
+            <div class="course-hero-badges">
+                <span class="badge"><i class="fa-solid fa-clock text-warning"></i> 4 Months Duration</span>
+                <span class="badge"><i class="fa-solid fa-code text-info"></i> Full-Stack &amp; AI</span>
+                <span class="badge"><i class="fa-solid fa-award text-success"></i> Dual Certification</span>
+                <span class="badge"><i class="fa-solid fa-rocket text-danger"></i> Live Hosting &amp; Git</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         COURSE OVERVIEW
+         ============================================================ -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Main Content -->
+                <div class="col-lg-8">
+                    <div class="reveal">
+                        <h2 class="mb-3">Course Overview</h2>
+                        <p>Our Web Development with AI programme is a comprehensive, project-driven course that takes you from writing your first line of HTML to building and deploying fully responsive, modern web applications. You will master the core front-end technologies — HTML5, CSS3, JavaScript and Bootstrap — through hands-on projects that mirror real-world development scenarios.</p>
+                        <p>What sets this programme apart is the integration of AI-assisted development tools into the workflow. You will learn to leverage AI coding assistants, automated testing tools and intelligent code-generation platforms to dramatically increase your productivity and code quality — a skill set that modern employers actively seek.</p>
+                    </div>
+
+                    <div class="mt-5 reveal">
+                        <h3 class="mb-4">What You'll Learn</h3>
+
+                        <div class="course-curriculum-item">
+                            <div class="module-number">01</div>
+                            <h6>Introduction to Web Development</h6>
+                        </div>
+                        <div class="course-curriculum-item">
+                            <div class="module-number">02</div>
+                            <h6>HTML5 – Structure &amp; Semantics</h6>
+                        </div>
+                        <div class="course-curriculum-item">
+                            <div class="module-number">03</div>
+                            <h6>CSS3 – Styling &amp; Layouts</h6>
+                        </div>
+                        <div class="course-curriculum-item">
+                            <div class="module-number">04</div>
+                            <h6>Responsive Web Design</h6>
+                        </div>
+                        <div class="course-curriculum-item">
+                            <div class="module-number">05</div>
+                            <h6>Bootstrap Framework</h6>
+                        </div>
+                        <div class="course-curriculum-item">
+                            <div class="module-number">06</div>
+                            <h6>JavaScript Fundamentals</h6>
+                        </div>
+                        <div class="course-curriculum-item">
+                            <div class="module-number">07</div>
+                            <h6>DOM Manipulation &amp; Events</h6>
+                        </div>
+                        <div class="course-curriculum-item">
+                            <div class="module-number">08</div>
+                            <h6>APIs &amp; Asynchronous JavaScript</h6>
+                        </div>
+                        <div class="course-curriculum-item">
+                            <div class="module-number">09</div>
+                            <h6>AI-Assisted Development Tools</h6>
+                        </div>
+                        <div class="course-curriculum-item">
+                            <div class="module-number">10</div>
+                            <h6>Website Projects &amp; Best Practices</h6>
+                        </div>
+                        <div class="course-curriculum-item">
+                            <div class="module-number">11</div>
+                            <h6>Deployment &amp; Hosting</h6>
+                        </div>
+                        <div class="course-curriculum-item">
+                            <div class="module-number">12</div>
+                            <h6>Portfolio &amp; Career Preparation</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <div class="course-info-card reveal">
+                        <h5 class="mb-3" style="font-weight:700;">Course Information</h5>
+
+                        <div class="course-info-item">
+                            <i class="fas fa-clock"></i>
+                            <span><strong>Duration:</strong> 4–6 Months</span>
+                        </div>
+                        <div class="course-info-item">
+                            <i class="fas fa-laptop-house"></i>
+                            <span><strong>Mode:</strong> Online &amp; Offline</span>
+                        </div>
+                        <div class="course-info-item">
+                            <i class="fas fa-layer-group"></i>
+                            <span><strong>Level:</strong> Beginner to Advanced</span>
+                        </div>
+                        <div class="course-info-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <span><strong>Projects:</strong> 6+ Real-World Projects</span>
+                        </div>
+                        <div class="course-info-item">
+                            <i class="fas fa-tools"></i>
+                            <span><strong>Tools:</strong> VS Code, GitHub, AI Tools</span>
+                        </div>
+                        <div class="course-info-item">
+                            <i class="fas fa-certificate"></i>
+                            <span><strong>Certificate:</strong> Yes</span>
+                        </div>
+
+                        <div class="mt-4">
+                            <a href="contact.html" class="btn btn-primary-custom w-100 justify-content-center mb-3">
+                                <i class="fas fa-paper-plane"></i> Enquire Now
+                            </a>
+                            <a href="#" class="btn btn-outline-custom w-100 justify-content-center">
+                                <i class="fas fa-download"></i> Download Brochure
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         FAQ SECTION
+         ============================================================ -->
+    <section class="section-padding bg-light-custom">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">FAQs</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Have questions about our Web Development course? Here are answers to the most commonly asked ones.</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion faq-accordion reveal" id="faqAccordion">
+
+                        <!-- FAQ 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHead1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqBody1" aria-expanded="true" aria-controls="faqBody1">
+                                    Do I need any programming experience to enrol?
+                                </button>
+                            </h2>
+                            <div id="faqBody1" class="accordion-collapse collapse show" aria-labelledby="faqHead1" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Not at all. This course begins with the fundamentals of how the web works and progresses step by step through HTML, CSS and JavaScript. It is designed for absolute beginners as well as those with some basic knowledge who want a structured, project-based learning path.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHead2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBody2" aria-expanded="false" aria-controls="faqBody2">
+                                    What is the course duration and mode of delivery?
+                                </button>
+                            </h2>
+                            <div id="faqBody2" class="accordion-collapse collapse" aria-labelledby="faqHead2" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    The programme spans 4 to 6 months and is offered in both online and offline modes. We provide flexible scheduling with weekday and weekend batch options so you can learn at a pace that suits your routine.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHead3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBody3" aria-expanded="false" aria-controls="faqBody3">
+                                    What tools and technologies will I learn?
+                                </button>
+                            </h2>
+                            <div id="faqBody3" class="accordion-collapse collapse" aria-labelledby="faqHead3" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    You will work with Visual Studio Code as your primary code editor, Git and GitHub for version control and collaboration, the Bootstrap framework for rapid responsive design, and a suite of AI-powered development tools that help you write, debug and optimise code more efficiently.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 4 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHead4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBody4" aria-expanded="false" aria-controls="faqBody4">
+                                    Will I build real projects during the course?
+                                </button>
+                            </h2>
+                            <div id="faqBody4" class="accordion-collapse collapse" aria-labelledby="faqHead4" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Absolutely. The course is project-driven from start to finish. You will build six or more real-world projects — including responsive websites, interactive web applications and a comprehensive portfolio site — that you can showcase to potential employers or clients.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 5 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHead5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBody5" aria-expanded="false" aria-controls="faqBody5">
+                                    How does AI integration enhance the learning experience?
+                                </button>
+                            </h2>
+                            <div id="faqBody5" class="accordion-collapse collapse" aria-labelledby="faqHead5" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Our curriculum includes a dedicated module on AI-assisted development tools where you will learn to use AI coding assistants for code generation, debugging, refactoring and automated testing. This prepares you for modern development workflows and gives you a competitive edge in the job market.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         CTA BANNER
+         ============================================================ -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="cta-banner text-center reveal">
+                <h2>Ready to Build the Web?</h2>
+                <p class="mx-auto">Start your journey into web development today. Learn the technologies that power the internet and launch your career in tech.</p>
+                <div class="mt-4">
+                    <a href="contact.html" class="btn btn-primary-custom">
+                        <i class="fas fa-paper-plane"></i> Enquire Now
+                    </a>
+                    <a href="courses.html" class="btn btn-secondary-custom ms-2">
+                        <i class="fas fa-th-list"></i> View All Courses
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         FOOTER
+         ============================================================ -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Brand Column -->
+                <div class="col-lg-4 col-md-6">
+                    <a class="footer-brand d-inline-block" href="index.html"><img src="assets/images/logo-white.png" alt="Trivikra Tech" class="footer-logo"></a>
+                    <p>Empowering the next generation of tech professionals through industry-relevant courses, hands-on training and AI-powered learning experiences.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="footer-title">Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Courses -->
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="footer-title">Our Courses</h6>
+                    <ul class="footer-links">
+                        <li><a href="ui-ux-design.html">UI/UX Design</a></li>
+                        <li><a href="graphic-design.html">Graphic Design</a></li>
+                        <li><a href="web-development.html">Web Development</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="footer-title">Contact Us</h6>
+                    <ul class="footer-links">
+                        <li><a href="mailto:info@trivikratech.com"><i class="fas fa-envelope me-2"></i>info@trivikratech.com</a></li>
+                        <li><a href="tel:+919876543210"><i class="fas fa-phone me-2"></i>+91 98765 43210</a></li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i>Hyderabad, India</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom text-center">
+                <p>&copy; 2024 Trivikra Tech. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+         WHATSAPP FLOAT
+         ============================================================ -->
+    <a href="https://wa.me/919876543210" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ============================================================
+         BACK TO TOP
+         ============================================================ -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

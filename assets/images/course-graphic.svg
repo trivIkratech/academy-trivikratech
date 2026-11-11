@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg_coursegraphicsvg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a1b4e"/>
+      <stop offset="100%" stop-color="#120a28"/>
+    </linearGradient>
+    <pattern id="dot_coursegraphicsvg" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="15" cy="15" r="1.5" fill="rgba(255,255,255,0.12)"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg_coursegraphicsvg)"/>
+  <rect width="800" height="500" fill="url(#dot_coursegraphicsvg)"/>
+  
+  <!-- Subtle decorative ambient circles -->
+  <circle cx="680" cy="120" r="180" fill="rgba(255,116,116,0.18)" filter="blur(40px)"/>
+  <circle cx="140" cy="380" r="140" fill="rgba(74,144,217,0.2)" filter="blur(30px)"/>
+  
+  <!-- Visual Frame / Glass Graphic Card -->
+  <g transform="translate(160, 60)">
+    <rect width="480" height="380" rx="24" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+    
+    <!-- Top toolbar dots -->
+    <circle cx="36" cy="36" r="6" fill="#FF7474"/>
+    <circle cx="56" cy="36" r="6" fill="#FFBD2E"/>
+    <circle cx="76" cy="36" r="6" fill="#27C93F"/>
+    
+    <!-- Badge -->
+    <rect x="36" y="80" width="130" height="32" rx="16" fill="rgba(255,116,116,0.2)"/>
+    <text x="101" y="101" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="12" font-weight="bold" fill="#FF7474" text-anchor="middle" letter-spacing="1">TRIVIKRA TECH</text>
+    
+    <!-- Big Badge / Icon Symbol -->
+    <circle cx="240" cy="190" r="54" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+    <text x="240" y="202" font-family="Arial, sans-serif" font-size="34" fill="#ffffff" text-anchor="middle">❖</text>
+    
+    <!-- Title & subtitle -->
+    <text x="240" y="280" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Graphic Design + AI</text>
+    <text x="240" y="315" font-family="'Inter', Arial, sans-serif" font-size="14" fill="rgba(255,255,255,0.7)" text-anchor="middle">Visual Identity &amp; Creative Gen-AI</text>
+  </g>
+</svg>

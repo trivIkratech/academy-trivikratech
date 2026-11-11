@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog &amp; Insights – Trivikra Tech | Design, Development &amp; AI</title>
+  <meta name="description"
+    content="Explore insightful articles, guides, and industry analyses on UI/UX Design, Generative AI, Agentic AI, Web Development, and Graphic Design.">
+  <meta property="og:title" content="Blog &amp; Insights – Trivikra Tech">
+  <meta property="og:description"
+    content="Explore the frontier of design, code, and artificial intelligence with Trivikra Tech.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo-lode.png">
+
+  <!-- Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/responsive.css" rel="stylesheet">
+</head>
+
+<body class="has-dark-hero">
+
+      <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top navbar-transparent" data-transparent="true">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Trivikra Tech" class="navbar-logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          
+          <!-- Courses Full-Width Mega Dropdown -->
+          <li class="nav-item dropdown dropdown-mega">
+            <a class="nav-link dropdown-toggle" href="courses.html" id="coursesDropdown" role="button" aria-expanded="false">
+              Courses <i class="fa-solid fa-chevron-down ms-1 nav-arrow"></i>
+            </a>
+            <div class="mega-menu" aria-labelledby="coursesDropdown">
+              <div class="container py-4">
+                <div class="mega-menu-header mb-3 pb-2 d-none d-lg-flex justify-content-between align-items-center border-bottom">
+                  <span class="mega-menu-title"><i class="fa-solid fa-sparkles text-primary me-2"></i> Our AI-Powered Programs</span>
+                  <a href="courses.html" class="mega-view-all">View All Programs <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                </div>
+                <div class="row g-3">
+                  <!-- Option 1: All Courses -->
+                  <div class="col-lg-3 col-12">
+                    <a href="courses.html" class="mega-menu-card">
+                      <div class="mega-card-icon icon-all">
+                        <i class="fa-solid fa-layer-group"></i>
+                      </div>
+                      <div class="mega-card-content">
+                        <div class="mega-card-badge">Complete Catalog</div>
+                        <h6 class="mega-card-title">All Courses</h6>
+                        <p class="mega-card-desc">Browse our complete spectrum of industry-leading design &amp; tech courses.</p>
+                      </div>
+                    </a>
+                  </div>
+
+                  <!-- Option 2: UI/UX Design with AI -->
+                  <div class="col-lg-3 col-12">
+                    <a href="ui-ux-design.html" class="mega-menu-card">
+                      <div class="mega-card-icon icon-uiux">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                      </div>
+                      <div class="mega-card-content">
+                        <div class="mega-card-badge badge-popular">Popular</div>
+                        <h6 class="mega-card-title">UI/UX Design with AI</h6>
+                        <p class="mega-card-desc">Master Figma design systems, UX research, and agentic AI workflows.</p>
+                      </div>
+                    </a>
+                  </div>
+
+                  <!-- Option 3: Graphic Design with AI -->
+                  <div class="col-lg-3 col-12">
+                    <a href="graphic-design.html" class="mega-menu-card">
+                      <div class="mega-card-icon icon-graphic">
+                        <i class="fa-solid fa-palette"></i>
+                      </div>
+                      <div class="mega-card-content">
+                        <div class="mega-card-badge badge-creative">Creative</div>
+                        <h6 class="mega-card-title">Graphic Design with AI</h6>
+                        <p class="mega-card-desc">Brand systems, visual storytelling, commercial advertising &amp; Gen-AI.</p>
+                      </div>
+                    </a>
+                  </div>
+
+                  <!-- Option 4: Web Development with AI -->
+                  <div class="col-lg-3 col-12">
+                    <a href="web-development.html" class="mega-menu-card">
+                      <div class="mega-card-icon icon-webdev">
+                        <i class="fa-solid fa-code"></i>
+                      </div>
+                      <div class="mega-card-content">
+                        <div class="mega-card-badge badge-demand">High Demand</div>
+                        <h6 class="mega-card-title">Web Development with AI</h6>
+                        <p class="mega-card-desc">Responsive websites, modern frontend/fullstack, and AI coding assistants.</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+        <a href="courses.html" class="btn btn-cta">Explore Courses</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== PAGE HERO ==================== -->
+  <header class="page-hero page-hero-bg page-hero-blog">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Blog</li>
+        </ol>
+      </nav>
+      <h1>Insights, Ideas &amp; Inspiration</h1>
+      <p>
+        Explore the latest viewpoints, practical guides, and critical developments across UI/UX design, generative
+        workflows, agentic AI, and modern web technologies.
+      </p>
+    </div>
+  </header>
+
+  <!-- ==================== BLOG GRID ==================== -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row g-4">
+        <!-- 1. UI/UX Design -->
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="blog-card">
+            <div class="blog-card-img-wrapper">
+              <img src="assets/images/blog-uiux.svg" alt="The Future of UI/UX Design with Generative AI"
+                class="blog-card-img" loading="lazy">
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-card-category">UI/UX Design</span>
+              <h4 class="blog-card-title">
+                <a href="blog-detail.html">The Future of UI/UX Design with Generative AI</a>
+              </h4>
+              <p class="blog-card-text">
+                How generative AI accelerates wireframing, enriches user research synthesis, and transforms static
+                prototyping into dynamic, empathetic interface solutions.
+              </p>
+              <div class="blog-card-footer">
+                <span class="blog-card-date"><i class="far fa-calendar-alt me-1"></i> Oct 15, 2026</span>
+                <a href="blog-detail.html" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Agentic AI -->
+        <div class="col-lg-4 col-md-6 reveal reveal-delay-1">
+          <div class="blog-card">
+            <div class="blog-card-img-wrapper">
+              <img src="assets/images/blog-agenticai.svg" alt="Understanding Agentic AI" class="blog-card-img"
+                loading="lazy">
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-card-category">Agentic AI</span>
+              <h4 class="blog-card-title">
+                <a href="blog-detail.html">Understanding Agentic AI: The Next Frontier</a>
+              </h4>
+              <p class="blog-card-text">
+                Delve into autonomous multi-agent systems and discover how specialized software agents collaborate to
+                plan, critique, and iterate on complex design systems.
+              </p>
+              <div class="blog-card-footer">
+                <span class="blog-card-date"><i class="far fa-calendar-alt me-1"></i> Oct 10, 2026</span>
+                <a href="blog-detail.html" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Web Development -->
+        <div class="col-lg-4 col-md-6 reveal reveal-delay-2">
+          <div class="blog-card">
+            <div class="blog-card-img-wrapper">
+              <img src="assets/images/blog-webdev.svg" alt="Getting Started with Modern Web Development"
+                class="blog-card-img" loading="lazy">
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-card-category">Web Development</span>
+              <h4 class="blog-card-title">
+                <a href="blog-detail.html">Getting Started with Modern Web Development</a>
+              </h4>
+              <p class="blog-card-text">
+                A structured roadmap for beginners entering frontend engineering with semantic HTML5, modern CSS3
+                layouts, vanilla JavaScript, and AI coding assistants.
+              </p>
+              <div class="blog-card-footer">
+                <span class="blog-card-date"><i class="far fa-calendar-alt me-1"></i> Oct 05, 2026</span>
+                <a href="blog-detail.html" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Generative AI -->
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="blog-card">
+            <div class="blog-card-img-wrapper">
+              <img src="assets/images/blog-genai.svg" alt="How Generative AI is Revolutionizing Graphic Design"
+                class="blog-card-img" loading="lazy">
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-card-category">Generative AI</span>
+              <h4 class="blog-card-title">
+                <a href="blog-detail.html">How Generative AI is Revolutionizing Graphic Design</a>
+              </h4>
+              <p class="blog-card-text">
+                From prompt curation to vector enhancement, learn how commercial artists use modern diffusion tools to
+                supercharge branding and moodboard workflows.
+              </p>
+              <div class="blog-card-footer">
+                <span class="blog-card-date"><i class="far fa-calendar-alt me-1"></i> Sep 28, 2026</span>
+                <a href="blog-detail.html" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Graphic Design -->
+        <div class="col-lg-4 col-md-6 reveal reveal-delay-1">
+          <div class="blog-card">
+            <div class="blog-card-img-wrapper">
+              <img src="assets/images/blog-graphic.svg" alt="The Role of AI in Modern Graphic Design Workflows"
+                class="blog-card-img" loading="lazy">
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-card-category">Graphic Design</span>
+              <h4 class="blog-card-title">
+                <a href="blog-detail.html">The Role of AI in Modern Graphic Design Workflows</a>
+              </h4>
+              <p class="blog-card-text">
+                AI is enhancing creative intuition, not replacing human taste. Discover how to preserve art direction
+                and distinct brand voice alongside intelligent automation.
+              </p>
+              <div class="blog-card-footer">
+                <span class="blog-card-date"><i class="far fa-calendar-alt me-1"></i> Sep 22, 2026</span>
+                <a href="blog-detail.html" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Career Guidance -->
+        <div class="col-lg-4 col-md-6 reveal reveal-delay-2">
+          <div class="blog-card">
+            <div class="blog-card-img-wrapper">
+              <img src="assets/images/blog-career.svg" alt="Building a Design Career: Skills You Need in 2027"
+                class="blog-card-img" loading="lazy">
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-card-category">Career Guidance</span>
+              <h4 class="blog-card-title">
+                <a href="blog-detail.html">Building a Design Career: Skills You Need in 2027</a>
+              </h4>
+              <p class="blog-card-text">
+                What do product managers and creative directors look for when evaluating candidates in an AI-assisted
+                era? Key technical competencies and communication skills.
+              </p>
+              <div class="blog-card-footer">
+                <span class="blog-card-date"><i class="far fa-calendar-alt me-1"></i> Sep 15, 2026</span>
+                <a href="blog-detail.html" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA BANNER ==================== -->
+  <section class="section-padding-sm bg-light-custom">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <div class="row align-items-center">
+          <div class="col-lg-8 mb-4 mb-lg-0">
+            <h2>Deepen Your Knowledge with Hands-On Practice</h2>
+            <p>
+              Theory is most powerful when combined with execution. Enroll in one of our three industry courses and
+              build a portfolio that stands out.
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <div class="d-flex flex-column flex-sm-row justify-content-lg-end gap-3">
+              <a href="courses.html" class="btn-primary-custom text-center">Explore Courses</a>
+              <a href="contact.html" class="btn-secondary-custom text-center">Talk to Counsellor</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1: Brand -->
+        <div class="col-lg-4 col-md-6">
+          <a class="footer-brand d-inline-block" href="index.html"><img src="assets/images/logo-white.png"
+              alt="Trivikra Tech" class="footer-logo"></a>
+          <p>
+            Empowering aspiring designers and developers with industry-relevant skills, practical experience and
+            AI-powered learning approaches.
+          </p>
+          <div class="footer-social">
+            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter"><i
+                class="fab fa-x-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><i
+                class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-title">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Our Courses -->
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5 class="footer-title">Our Courses</h5>
+          <ul class="footer-links">
+            <li><a href="ui-ux-design.html">UI/UX Design with AI</a></li>
+            <li><a href="web-development.html">Web Development with AI</a></li>
+            <li><a href="graphic-design.html">Graphic Design with AI</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Info -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">Contact Information</h5>
+          <ul class="footer-links">
+            <li><i class="fas fa-globe text-secondary me-2"></i> <a href="http://www.trivikratech.com" target="_blank"
+                rel="noopener">www.trivikratech.com</a></li>
+            <li><i class="fab fa-whatsapp text-secondary me-2"></i> <a href="https://wa.me/919270230778">+91
+                9270230778</a></li>
+            <li><i class="fas fa-envelope text-secondary me-2"></i> <a
+                href="mailto:info@trivikratech.com">info@trivikratech.com</a></li>
+            <li class="mt-2"><span class="small text-white-50">Hours: Mon – Sat (9:00 AM – 7:00 PM)</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+            <p>&copy; <span id="currentYear">2026</span> Trivikra Tech. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <a href="contact.html" class="me-3">Privacy Policy</a>
+            <a href="contact.html">Terms &amp; Conditions</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== FLOATING ELEMENTS ==================== -->
+  <a href="https://wa.me/919270230778" class="whatsapp-float" target="_blank" rel="noopener"
+    aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

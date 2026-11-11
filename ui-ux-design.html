@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Design with Gen-AI &amp; Agentic-AI – Trivikra Tech</title>
+    <meta name="description" content="Master user experience, interface design, design thinking, prototyping and AI-powered design workflows to create meaningful digital products at Trivikra Tech.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/images/logo-lode.png">
+</head>
+<body class="has-dark-hero">
+
+    <!-- ============================================================
+         NAVBAR (Inner Page – NOT transparent)
+         ============================================================ -->
+        <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top navbar-transparent" data-transparent="true">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Trivikra Tech" class="navbar-logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          
+          <!-- Courses Full-Width Mega Dropdown -->
+          <li class="nav-item dropdown dropdown-mega">
+            <a class="nav-link dropdown-toggle active" href="courses.html" id="coursesDropdown" role="button" aria-expanded="false">
+              Courses <i class="fa-solid fa-chevron-down ms-1 nav-arrow"></i>
+            </a>
+            <div class="mega-menu" aria-labelledby="coursesDropdown">
+              <div class="container py-4">
+                <div class="mega-menu-header mb-3 pb-2 d-none d-lg-flex justify-content-between align-items-center border-bottom">
+                  <span class="mega-menu-title"><i class="fa-solid fa-sparkles text-primary me-2"></i> Our AI-Powered Programs</span>
+                  <a href="courses.html" class="mega-view-all">View All Programs <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                </div>
+                <div class="row g-3">
+                  <!-- Option 1: All Courses -->
+                  <div class="col-lg-3 col-12">
+                    <a href="courses.html" class="mega-menu-card">
+                      <div class="mega-card-icon icon-all">
+                        <i class="fa-solid fa-layer-group"></i>
+                      </div>
+                      <div class="mega-card-content">
+                        <div class="mega-card-badge">Complete Catalog</div>
+                        <h6 class="mega-card-title">All Courses</h6>
+                        <p class="mega-card-desc">Browse our complete spectrum of industry-leading design &amp; tech courses.</p>
+                      </div>
+                    </a>
+                  </div>
+
+                  <!-- Option 2: UI/UX Design with AI -->
+                  <div class="col-lg-3 col-12">
+                    <a href="ui-ux-design.html" class="mega-menu-card">
+                      <div class="mega-card-icon icon-uiux">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                      </div>
+                      <div class="mega-card-content">
+                        <div class="mega-card-badge badge-popular">Popular</div>
+                        <h6 class="mega-card-title">UI/UX Design with AI</h6>
+                        <p class="mega-card-desc">Master Figma design systems, UX research, and agentic AI workflows.</p>
+                      </div>
+                    </a>
+                  </div>
+
+                  <!-- Option 3: Graphic Design with AI -->
+                  <div class="col-lg-3 col-12">
+                    <a href="graphic-design.html" class="mega-menu-card">
+                      <div class="mega-card-icon icon-graphic">
+                        <i class="fa-solid fa-palette"></i>
+                      </div>
+                      <div class="mega-card-content">
+                        <div class="mega-card-badge badge-creative">Creative</div>
+                        <h6 class="mega-card-title">Graphic Design with AI</h6>
+                        <p class="mega-card-desc">Brand systems, visual storytelling, commercial advertising &amp; Gen-AI.</p>
+                      </div>
+                    </a>
+                  </div>
+
+                  <!-- Option 4: Web Development with AI -->
+                  <div class="col-lg-3 col-12">
+                    <a href="web-development.html" class="mega-menu-card">
+                      <div class="mega-card-icon icon-webdev">
+                        <i class="fa-solid fa-code"></i>
+                      </div>
+                      <div class="mega-card-content">
+                        <div class="mega-card-badge badge-demand">High Demand</div>
+                        <h6 class="mega-card-title">Web Development with AI</h6>
+                        <p class="mega-card-desc">Responsive websites, modern frontend/fullstack, and AI coding assistants.</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+        <a href="courses.html" class="btn btn-cta">Explore Courses</a>
+      </div>
+    </div>
+  </nav>
+
+    <!-- ============================================================
+         COURSE DETAIL HEADER (FULL SCREEN BG)
+         ============================================================ -->
+    <section class="course-detail-header course-hero-bg course-hero-uiux">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="courses.html">Courses</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">UI/UX Design</li>
+                </ol>
+            </nav>
+            <h1>UI/UX Design with Gen-AI &amp; Agentic-AI</h1>
+            <p>Master user experience, interface design, design thinking, prototyping and AI-powered design workflows to create meaningful digital products.</p>
+            <div class="course-hero-badges">
+                <span class="badge"><i class="fa-solid fa-clock text-warning"></i> 4 Months Duration</span>
+                <span class="badge"><i class="fa-solid fa-laptop-code text-info"></i> Live Client Projects</span>
+                <span class="badge"><i class="fa-solid fa-award text-success"></i> Dual Certification</span>
+                <span class="badge"><i class="fa-solid fa-wand-magic-sparkles text-danger"></i> Gen-AI &amp; Agentic AI</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         COURSE OVERVIEW
+         ============================================================ -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Main Content -->
+                <div class="col-lg-8">
+                    <div class="reveal">
+                        <h2 class="mb-3">Course Overview</h2>
+                        <p>This comprehensive UI/UX Design programme is designed to transform you from a beginner into a skilled product designer capable of crafting intuitive, beautiful and user-centred digital experiences. You will learn the full spectrum of design — from foundational principles and user research to advanced prototyping and interface design using industry-standard tools like Figma.</p>
+                        <p>What makes this course truly future-ready is its integration of Generative AI and Agentic AI workflows. You will discover how to leverage AI tools to accelerate ideation, automate repetitive design tasks, generate UI variations and conduct smarter usability analysis — preparing you for the next generation of design work.</p>
+                    </div>
+
+                    <div class="mt-5 reveal">
+                        <h3 class="mb-4">What You'll Learn</h3>
+
+                        <div class="course-curriculum-item">
+                            <div class="module-number">01</div>
+                            <h6>Introduction to UI/UX Design</h6>
+                        </div>
+                        <div class="course-curriculum-item">
+                            <div class="module-number">02</div>
+                            <h6>User Research &amp; Design Thinking</h6>
+                        </div>
+                        <div class="course-curriculum-item">
+                            <div class="module-number">03</div>
+                            <h6>Information Architecture &amp; User Flows</h6>
+                        </div>
+                        <div class="course-curriculum-item">
+                            <div class="module-number">04</div>
+                            <h6>Wireframing &amp; Low-Fidelity Prototyping</h6>
+                        </div>
+                        <div class="course-curriculum-item">
+                            <div class="module-number">05</div>
+                            <h6>Visual Design Principles</h6>
+                        </div>
+                        <div class="course-curriculum-item">
+                            <div class="module-number">06</div>
+                            <h6>Figma – Interface Design</h6>
+                        </div>
+                        <div class="course-curriculum-item">
+                            <div class="module-number">07</div>
+                            <h6>Advanced UI Design &amp; Component Systems</h6>
+                        </div>
+                        <div class="course-curriculum-item">
+                            <div class="module-number">08</div>
+                            <h6>Responsive &amp; Mobile-First Design</h6>
+                        </div>
+                        <div class="course-curriculum-item">
+                            <div class="module-number">09</div>
+                            <h6>Generative AI for Designers</h6>
+                        </div>
+                        <div class="course-curriculum-item">
+                            <div class="module-number">10</div>
+                            <h6>Agentic AI Workflows in Design</h6>
+                        </div>
+                        <div class="course-curriculum-item">
+                            <div class="module-number">11</div>
+                            <h6>Usability Testing &amp; Iteration</h6>
+                        </div>
+                        <div class="course-curriculum-item">
+                            <div class="module-number">12</div>
+                            <h6>Portfolio Project &amp; Presentation</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <div class="course-info-card reveal">
+                        <h5 class="mb-3" style="font-weight:700;">Course Information</h5>
+
+                        <div class="course-info-item">
+                            <i class="fas fa-clock"></i>
+                            <span><strong>Duration:</strong> 4–6 Months</span>
+                        </div>
+                        <div class="course-info-item">
+                            <i class="fas fa-laptop-house"></i>
+                            <span><strong>Mode:</strong> Online &amp; Offline</span>
+                        </div>
+                        <div class="course-info-item">
+                            <i class="fas fa-layer-group"></i>
+                            <span><strong>Level:</strong> Beginner to Advanced</span>
+                        </div>
+                        <div class="course-info-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <span><strong>Projects:</strong> 6+ Real-World Projects</span>
+                        </div>
+                        <div class="course-info-item">
+                            <i class="fas fa-tools"></i>
+                            <span><strong>Tools:</strong> Figma, AI Tools</span>
+                        </div>
+                        <div class="course-info-item">
+                            <i class="fas fa-certificate"></i>
+                            <span><strong>Certificate:</strong> Yes</span>
+                        </div>
+
+                        <div class="mt-4">
+                            <a href="contact.html" class="btn btn-primary-custom w-100 justify-content-center mb-3">
+                                <i class="fas fa-paper-plane"></i> Enquire Now
+                            </a>
+                            <a href="#" class="btn btn-outline-custom w-100 justify-content-center">
+                                <i class="fas fa-download"></i> Download Brochure
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         FAQ SECTION
+         ============================================================ -->
+    <section class="section-padding bg-light-custom">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">FAQs</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Got questions about our UI/UX Design course? Find answers to the most common queries below.</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion faq-accordion reveal" id="faqAccordion">
+
+                        <!-- FAQ 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHead1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqBody1" aria-expanded="true" aria-controls="faqBody1">
+                                    Do I need any prior design experience to join this course?
+                                </button>
+                            </h2>
+                            <div id="faqBody1" class="accordion-collapse collapse show" aria-labelledby="faqHead1" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    No prior design experience is required. This course is structured to take you from the very basics of design thinking and visual principles all the way to advanced prototyping and AI-powered workflows. Whether you are a complete beginner or looking to transition into design, this programme is designed for you.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHead2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBody2" aria-expanded="false" aria-controls="faqBody2">
+                                    How long is the course and what is the schedule?
+                                </button>
+                            </h2>
+                            <div id="faqBody2" class="accordion-collapse collapse" aria-labelledby="faqHead2" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    The course runs for 4 to 6 months depending on the batch schedule. Classes are held in both online and offline modes, with flexible timing options for weekday and weekend batches to accommodate working professionals and students alike.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHead3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBody3" aria-expanded="false" aria-controls="faqBody3">
+                                    What tools and software will I learn during the programme?
+                                </button>
+                            </h2>
+                            <div id="faqBody3" class="accordion-collapse collapse" aria-labelledby="faqHead3" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    You will gain hands-on experience with Figma — the industry-standard tool for interface design and prototyping. Additionally, you will explore a range of AI-powered design tools for generative design, automated layouts, image generation and intelligent user testing workflows.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 4 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHead4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBody4" aria-expanded="false" aria-controls="faqBody4">
+                                    What career opportunities can I expect after completing this course?
+                                </button>
+                            </h2>
+                            <div id="faqBody4" class="accordion-collapse collapse" aria-labelledby="faqHead4" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Graduates are well-prepared for roles such as UI Designer, UX Designer, Product Designer, Interaction Designer and UX Researcher. The growing demand for designers who can integrate AI into their workflows makes our graduates highly competitive in both agency and in-house design positions.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 5 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHead5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBody5" aria-expanded="false" aria-controls="faqBody5">
+                                    How is AI integrated into the design curriculum?
+                                </button>
+                            </h2>
+                            <div id="faqBody5" class="accordion-collapse collapse" aria-labelledby="faqHead5" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    The course includes dedicated modules on Generative AI for Designers and Agentic AI Workflows. You will learn to use AI tools for rapid prototyping, automated design variations, AI-assisted user research analysis and intelligent content generation — empowering you to work faster and smarter.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         CTA BANNER
+         ============================================================ -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="cta-banner text-center reveal">
+                <h2>Ready to Start Your Design Career?</h2>
+                <p class="mx-auto">Take the first step toward becoming a professional UI/UX designer. Enrol today and build the skills that companies are looking for.</p>
+                <div class="mt-4">
+                    <a href="contact.html" class="btn btn-primary-custom">
+                        <i class="fas fa-paper-plane"></i> Enquire Now
+                    </a>
+                    <a href="courses.html" class="btn btn-secondary-custom ms-2">
+                        <i class="fas fa-th-list"></i> View All Courses
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         FOOTER
+         ============================================================ -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Brand Column -->
+                <div class="col-lg-4 col-md-6">
+                    <a class="footer-brand d-inline-block" href="index.html"><img src="assets/images/logo-white.png" alt="Trivikra Tech" class="footer-logo"></a>
+                    <p>Empowering the next generation of tech professionals through industry-relevant courses, hands-on training and AI-powered learning experiences.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="footer-title">Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Courses -->
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="footer-title">Our Courses</h6>
+                    <ul class="footer-links">
+                        <li><a href="ui-ux-design.html">UI/UX Design</a></li>
+                        <li><a href="graphic-design.html">Graphic Design</a></li>
+                        <li><a href="web-development.html">Web Development</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="footer-title">Contact Us</h6>
+                    <ul class="footer-links">
+                        <li><a href="mailto:info@trivikratech.com"><i class="fas fa-envelope me-2"></i>info@trivikratech.com</a></li>
+                        <li><a href="tel:+919876543210"><i class="fas fa-phone me-2"></i>+91 98765 43210</a></li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i>Hyderabad, India</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom text-center">
+                <p>&copy; 2024 Trivikra Tech. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+         WHATSAPP FLOAT
+         ============================================================ -->
+    <a href="https://wa.me/919876543210" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ============================================================
+         BACK TO TOP
+         ============================================================ -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
